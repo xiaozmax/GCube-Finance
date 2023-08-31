@@ -11,7 +11,7 @@ function getAddressByApiType($api_type, $pid)
     $list = [];
     if ($api_type == "zjmf_api") {
         $list = think\Db::name("zjmf_finance_api")->field("id,name,type")->select()->toArray();
-        $api_type = ["manual" => "手动", "zjmf_api" => "智简魔方", "whmcs" => "WHMCS"];
+        $api_type = ["manual" => "手动", "zjmf_api" => "GCube-Finance", "whmcs" => "WHMCS"];
         foreach ($list as &$v) {
             $v["name"] = "【" . $api_type[$v["type"]] . "】-" . $v["name"];
         }
