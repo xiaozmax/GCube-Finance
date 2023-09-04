@@ -1,2 +1,2 @@
 # GCube-Finance
-GCube-Finance是一个自由的财务系统
+GCube-Finance是一个自由（Libre）的财务系统
